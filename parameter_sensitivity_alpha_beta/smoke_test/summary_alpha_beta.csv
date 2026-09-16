@@ -1,0 +1,2 @@
+status,error,experiment,dataset,alpha,beta,gamma,lambda_t,epochs,run_times,seed,AP_mean,AP_std,1-HL_mean,1-HL_std,1-RL_mean,1-RL_std,AUC_mean,AUC_std,1-OE_mean,1-OE_std,1-Cov_mean,1-Cov_std,log_dir,record_dir
+ok,,alpha_0p001_beta_0p1,corel5k,0.001,0.1,0.03,0.2,1,1,1,0.10938880846242656,0.0,0.9866690566424254,0.0,0.6252825150424556,0.0,0.6300446150880836,0.0,0.12117177097203724,0.0,0.331629622042405,0.0,parameter_sensitivity_alpha_beta\smoke_test\alpha_0p001_beta_0p1\logs,parameter_sensitivity_alpha_beta\smoke_test\alpha_0p001_beta_0p1\records

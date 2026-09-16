@@ -1,0 +1,10 @@
+2026-06-13 10:25:32 - root - INFO: - --------------------Training 1 time--------------------
+2026-06-13 10:25:32 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-06-13 10:25:32 - root - INFO: - learning_rate:1e-04	epochs:1				batch_size:64		seed:1
+2026-06-13 10:25:32 - root - INFO: - alpha:1e-03			beta:0.1		gamma:3e-02		lambda_t:0.2		mask_rate:0.5
+2026-06-13 10:25:32 - root - INFO: - ins_temperature:0.3	fold:0
+2026-06-13 10:25:32 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-06-13 10:25:32 - root - INFO: - early_stop:True
+2026-06-13 10:25:59 - root - INFO: - [train] ==> epoch[1/1], alpha:0.0000, beta:0.1000, gamma:0.0000, lambda_t:0.0500, uncertainty_weight:0.0200, loss_MSIC:0.00, loss_HMBC:0.40, loss_recon:0.15, loss:0.59, loss_trust:0.03, loss_uncertainty:0.00, loss_vae:0.00
+2026-06-13 10:25:59 - root - INFO: - [val] ==> epoch[1/1]  AP:0.1117  1-HL:0.9866  1-RL:0.6368  AUC:0.6375  1-OE:0.1175  1-Cov:0.3492
+2026-06-13 10:26:00 - root - INFO: - FINAL TEST RESULTS: [test] ==> epoch[1/1]  AP:0.1094  1-HL:0.9867  1-RL:0.6253  AUC:0.6300  1-OE:0.1212  1-Cov:0.3316

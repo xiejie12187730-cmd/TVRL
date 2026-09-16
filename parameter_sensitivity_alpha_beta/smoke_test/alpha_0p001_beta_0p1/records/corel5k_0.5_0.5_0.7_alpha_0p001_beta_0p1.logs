@@ -1,0 +1,21 @@
+2026-06-13 10:26:00 - root - INFO: - --------------------Training over--------------------
+2026-06-13 10:26:00 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-06-13 10:26:00 - root - INFO: - learning_rate:1e-04	epochs:1				batch_size:64		seed:1
+2026-06-13 10:26:00 - root - INFO: - alpha:1e-03			beta:0.1		gamma:3e-02		lambda_t:0.2		mask_rate:0.5
+2026-06-13 10:26:00 - root - INFO: - ins_temperature:0.3	fold:0
+2026-06-13 10:26:00 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-06-13 10:26:00 - root - INFO: - early_stop:True
+2026-06-13 10:26:00 - root - INFO: - AP: [10.94]
+2026-06-13 10:26:00 - root - INFO: - 1-HL: [98.67]
+2026-06-13 10:26:00 - root - INFO: - 1-RL: [62.53]
+2026-06-13 10:26:00 - root - INFO: - AUC: [63.0]
+2026-06-13 10:26:00 - root - INFO: - 1-OE: [12.12]
+2026-06-13 10:26:00 - root - INFO: - 1-Cov: [33.16]
+2026-06-13 10:26:00 - root - INFO: - 
+			AP	mean: 10.94    std: 0.00
+			1-HL	mean: 98.67    std: 0.00
+			1-RL	mean: 62.53    std: 0.00
+			AUC	mean: 63.00    std: 0.00
+			1-OE	mean: 12.12    std: 0.00
+			1-Cov	mean: 33.16    std: 0.00
+

@@ -1,0 +1,797 @@
+2026-01-14 21:14:49 - root - INFO: - --------------------Training over--------------------
+2026-01-14 21:14:49 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-14 21:14:49 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-14 21:14:49 - root - INFO: - alpha:3e-02			beta:5e-03				mask_rate:0.5		early_stop:False
+2026-01-14 21:14:49 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:9
+2026-01-14 21:14:49 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-14 21:14:49 - root - INFO: - AP: [42.56, 43.98, 43.44, 45.24, 44.02, 43.5, 44.37, 42.38, 43.35, 42.79]
+2026-01-14 21:14:49 - root - INFO: - 1-HL: [98.78, 98.79, 98.76, 98.83, 98.78, 98.79, 98.77, 98.75, 98.76, 98.79]
+2026-01-14 21:14:49 - root - INFO: - 1-RL: [91.22, 91.35, 91.16, 91.31, 91.15, 90.86, 91.01, 91.05, 91.16, 90.81]
+2026-01-14 21:14:49 - root - INFO: - AUC: [91.54, 91.67, 91.47, 91.59, 91.45, 90.96, 91.34, 91.29, 91.56, 90.85]
+2026-01-14 21:14:49 - root - INFO: - 1-OE: [51.93, 50.33, 51.8, 54.06, 51.4, 52.46, 52.06, 50.07, 51.0, 50.2]
+2026-01-14 21:14:49 - root - INFO: - 1-Cov: [79.91, 80.01, 79.27, 79.69, 79.64, 78.45, 78.73, 79.06, 79.57, 78.84]
+2026-01-14 21:14:49 - root - INFO: - 
+			AP	mean: 43.56    std: 0.83
+			1-HL	mean: 98.78    std: 0.02
+			1-RL	mean: 91.11    std: 0.17
+			AUC	mean: 91.37    std: 0.26
+			1-OE	mean: 51.53    std: 1.16
+			1-Cov	mean: 79.32    std: 0.50
+
+2026-01-15 15:20:55 - root - INFO: - --------------------Training over--------------------
+2026-01-15 15:20:55 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-15 15:20:55 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-15 15:20:55 - root - INFO: - alpha:3e-02			beta:5e-03				mask_rate:0.5		early_stop:False
+2026-01-15 15:20:55 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:0
+2026-01-15 15:20:55 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-15 15:20:55 - root - INFO: - AP: [43.02]
+2026-01-15 15:20:55 - root - INFO: - 1-HL: [98.79]
+2026-01-15 15:20:55 - root - INFO: - 1-RL: [91.56]
+2026-01-15 15:20:55 - root - INFO: - AUC: [91.83]
+2026-01-15 15:20:55 - root - INFO: - 1-OE: [51.66]
+2026-01-15 15:20:55 - root - INFO: - 1-Cov: [80.56]
+2026-01-15 15:20:55 - root - INFO: - 
+			AP	mean: 43.02    std: 0.00
+			1-HL	mean: 98.79    std: 0.00
+			1-RL	mean: 91.56    std: 0.00
+			AUC	mean: 91.83    std: 0.00
+			1-OE	mean: 51.66    std: 0.00
+			1-Cov	mean: 80.56    std: 0.00
+
+#注意力融合处理视图缺失的性能（可切换）
+2026-01-15 15:50:37 - root - INFO: - --------------------Training over--------------------
+2026-01-15 15:50:37 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-15 15:50:37 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-15 15:50:37 - root - INFO: - alpha:3e-02			beta:5e-03				mask_rate:0.5		early_stop:False
+2026-01-15 15:50:37 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-15 15:50:37 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-15 15:50:37 - root - INFO: - AP: [42.93, 43.9, 43.07, 44.88, 43.39]
+2026-01-15 15:50:37 - root - INFO: - 1-HL: [98.77, 98.78, 98.77, 98.83, 98.75]
+2026-01-15 15:50:37 - root - INFO: - 1-RL: [91.24, 91.33, 91.34, 91.08, 91.23]
+2026-01-15 15:50:37 - root - INFO: - AUC: [91.52, 91.64, 91.65, 91.36, 91.47]
+2026-01-15 15:50:37 - root - INFO: - 1-OE: [52.46, 50.73, 51.53, 53.53, 49.53]
+2026-01-15 15:50:37 - root - INFO: - 1-Cov: [80.08, 80.47, 79.65, 79.25, 79.92]
+2026-01-15 15:50:37 - root - INFO: - 
+			AP	mean: 43.63    std: 0.71
+			1-HL	mean: 98.78    std: 0.03
+			1-RL	mean: 91.24    std: 0.10
+			AUC	mean: 91.53    std: 0.11
+			1-OE	mean: 51.56    std: 1.38
+			1-Cov	mean: 79.88    std: 0.41
+
+#重构视图处理视图缺失性能（可切换）
+2026-01-15 16:31:59 - root - INFO: - --------------------Training over--------------------
+2026-01-15 16:31:59 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-15 16:31:59 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-15 16:31:59 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-15 16:31:59 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-15 16:31:59 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-15 16:31:59 - root - INFO: - early_stop:False			mode:reconstruction
+2026-01-15 16:31:59 - root - INFO: - AP: [43.23, 44.19, 43.07, 46.03, 43.66]
+2026-01-15 16:31:59 - root - INFO: - 1-HL: [98.78, 98.76, 98.76, 98.83, 98.75]
+2026-01-15 16:31:59 - root - INFO: - 1-RL: [91.48, 91.15, 91.38, 91.63, 91.23]
+2026-01-15 16:31:59 - root - INFO: - AUC: [91.78, 91.54, 91.7, 91.86, 91.46]
+2026-01-15 16:31:59 - root - INFO: - 1-OE: [52.2, 52.06, 51.53, 54.46, 51.0]
+2026-01-15 16:31:59 - root - INFO: - 1-Cov: [80.46, 79.53, 79.41, 80.4, 80.15]
+2026-01-15 16:31:59 - root - INFO: - 
+			AP	mean: 44.04    std: 1.07
+			1-HL	mean: 98.78    std: 0.03
+			1-RL	mean: 91.38    std: 0.17
+			AUC	mean: 91.67    std: 0.15
+			1-OE	mean: 52.25    std: 1.18
+			1-Cov	mean: 79.99    std: 0.44
+
+#删除了注意力融合模块，只保留了重构补全缺失视图模块，轮次100
+2026-01-19 20:17:40 - root - INFO: - --------------------Training over--------------------
+2026-01-19 20:17:40 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-19 20:17:40 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-19 20:17:40 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-19 20:17:40 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:9
+2026-01-19 20:17:40 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-19 20:17:40 - root - INFO: - early_stop:False			mode:attention
+2026-01-19 20:17:40 - root - INFO: - AP: [43.04, 44.04, 43.66, 45.95, 44.07, 44.3, 44.43, 42.49, 43.51, 43.18]
+2026-01-19 20:17:40 - root - INFO: - 1-HL: [98.76, 98.77, 98.77, 98.84, 98.76, 98.81, 98.75, 98.76, 98.77, 98.77]
+2026-01-19 20:17:40 - root - INFO: - 1-RL: [91.24, 91.21, 91.67, 91.47, 90.94, 91.13, 91.22, 91.1, 91.46, 91.6]
+2026-01-19 20:17:40 - root - INFO: - AUC: [91.51, 91.62, 91.92, 91.66, 91.19, 91.28, 91.62, 91.31, 91.77, 91.57]
+2026-01-19 20:17:40 - root - INFO: - 1-OE: [52.06, 52.33, 50.6, 54.99, 52.46, 54.86, 52.86, 51.66, 50.73, 51.13]
+2026-01-19 20:17:40 - root - INFO: - 1-Cov: [79.78, 79.99, 80.07, 79.93, 78.78, 78.95, 79.26, 79.33, 79.58, 80.3]
+2026-01-19 20:17:40 - root - INFO: - 
+			AP	mean: 43.87    std: 0.90
+			1-HL	mean: 98.77    std: 0.02
+			1-RL	mean: 91.30    std: 0.22
+			AUC	mean: 91.55    std: 0.22
+			1-OE	mean: 52.37    std: 1.46
+			1-Cov	mean: 79.60    std: 0.48
+
+
+#删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11
+2026-01-20 11:58:21 - root - INFO: - --------------------Training over--------------------
+2026-01-20 11:58:21 - root - INFO: - dataset:corel5k            training_rate:0.7               data_ms_rate:0.5        label_ms_rate:0.5
+2026-01-20 11:58:21 - root - INFO: - learning_rate:1e-04        epochs:100                              batch_size:128          seed:1
+2026-01-20 11:58:21 - root - INFO: - alpha:3e-02                        beta:5e-03                              gamma:0.7            mask_rate:0.5
+2026-01-20 11:58:21 - root - INFO: - ins_temperature:0.5        label_temperature:1.0   threshold:0.10          fold:9
+2026-01-20 11:58:21 - root - INFO: - network_dropout:0.5        embedding_dim:768               mid_dim:1024            layer_num:3   
+2026-01-20 11:58:21 - root - INFO: - early_stop:False                   mode:attention
+2026-01-20 11:58:21 - root - INFO: - AP: [42.84, 44.38, 43.81, 46.01, 44.05, 44.06, 44.99, 42.92, 43.98, 44.04]
+2026-01-20 11:58:21 - root - INFO: - 1-HL: [98.78, 98.79, 98.78, 98.83, 98.75, 98.79, 98.76, 98.77, 98.78, 98.78]
+2026-01-20 11:58:21 - root - INFO: - 1-RL: [91.5, 91.3, 91.42, 91.46, 91.22, 91.07, 91.41, 91.02, 91.58, 91.26]
+2026-01-20 11:58:21 - root - INFO: - AUC: [91.73, 91.64, 91.7, 91.65, 91.48, 91.27, 91.79, 91.22, 91.9, 91.24]
+2026-01-20 11:58:21 - root - INFO: - 1-OE: [50.33, 53.13, 51.93, 54.99, 50.2, 52.33, 53.66, 51.93, 50.33, 51.4]
+2026-01-20 11:58:21 - root - INFO: - 1-Cov: [80.17, 79.91, 79.53, 79.64, 79.35, 78.7, 79.84, 79.01, 79.79, 79.37]
+2026-01-20 11:58:21 - root - INFO: -
+                        AP      mean: 44.11    std: 0.87
+                        1-HL    mean: 98.78    std: 0.02
+                        1-RL    mean: 91.32    std: 0.18
+                        AUC     mean: 91.56    std: 0.23 
+                        1-OE    mean: 52.02    std: 1.49
+                        1-Cov   mean: 79.53    std: 0.42
+
+#删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+2026-01-21 19:42:25 - root - INFO: - --------------------Training over--------------------
+2026-01-21 19:42:25 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-21 19:42:25 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-21 19:42:25 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-21 19:42:25 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-21 19:42:25 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-21 19:42:25 - root - INFO: - early_stop:False			mode:attention
+2026-01-21 19:42:25 - root - INFO: - AP: [42.84, 44.38, 43.81, 46.01, 44.05]
+2026-01-21 19:42:25 - root - INFO: - 1-HL: [98.78, 98.79, 98.78, 98.83, 98.75]
+2026-01-21 19:42:25 - root - INFO: - 1-RL: [91.5, 91.3, 91.42, 91.46, 91.22]
+2026-01-21 19:42:25 - root - INFO: - AUC: [91.73, 91.64, 91.7, 91.65, 91.48]
+2026-01-21 19:42:25 - root - INFO: - 1-OE: [50.33, 53.13, 51.93, 54.99, 50.2]
+2026-01-21 19:42:25 - root - INFO: - 1-Cov: [80.17, 79.91, 79.53, 79.64, 79.35]
+2026-01-21 19:42:25 - root - INFO: - 
+			AP	mean: 44.22    std: 1.03
+			1-HL	mean: 98.78    std: 0.02
+			1-RL	mean: 91.38    std: 0.10
+			AUC	mean: 91.64    std: 0.09
+			1-OE	mean: 52.12    std: 1.80
+			1-Cov	mean: 79.72    std: 0.29
+#删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+2026-01-29 13:20:26 - root - INFO: - --------------------Training over--------------------
+2026-01-29 13:20:26 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-29 13:20:26 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-29 13:20:26 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-29 13:20:26 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-29 13:20:26 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-29 13:20:26 - root - INFO: - early_stop:False			mode:attention
+2026-01-29 13:20:26 - root - INFO: - AP: [43.14, 44.69, 43.82, 45.74, 43.89]
+2026-01-29 13:20:26 - root - INFO: - 1-HL: [98.78, 98.8, 98.76, 98.83, 98.75]
+2026-01-29 13:20:26 - root - INFO: - 1-RL: [91.51, 91.35, 91.35, 91.39, 90.97]
+2026-01-29 13:20:26 - root - INFO: - AUC: [91.69, 91.65, 91.57, 91.61, 91.28]
+2026-01-29 13:20:26 - root - INFO: - 1-OE: [50.73, 52.33, 51.53, 54.19, 51.53]
+2026-01-29 13:20:26 - root - INFO: - 1-Cov: [80.28, 80.14, 79.33, 79.65, 78.87]
+2026-01-29 13:20:26 - root - INFO: - 
+			AP	mean: 44.26    std: 0.89
+			1-HL	mean: 98.78    std: 0.03
+			1-RL	mean: 91.31    std: 0.18
+			AUC	mean: 91.56    std: 0.14
+			1-OE	mean: 52.06    std: 1.18
+			1-Cov	mean: 79.65    std: 0.52
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+2026-01-29 17:41:09 - root - INFO: - --------------------Training over--------------------
+2026-01-29 17:41:09 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-29 17:41:09 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-29 17:41:09 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-29 17:41:09 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-29 17:41:09 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-29 17:41:09 - root - INFO: - early_stop:False			mode:attention
+2026-01-29 17:41:09 - root - INFO: - AP: [42.91, 44.81, 43.7, 46.02, 43.82]
+2026-01-29 17:41:09 - root - INFO: - 1-HL: [98.79, 98.78, 98.77, 98.83, 98.74]
+2026-01-29 17:41:09 - root - INFO: - 1-RL: [91.56, 91.41, 91.47, 91.59, 91.08]
+2026-01-29 17:41:09 - root - INFO: - AUC: [91.84, 91.71, 91.73, 91.84, 91.36]
+2026-01-29 17:41:09 - root - INFO: - 1-OE: [50.33, 53.26, 51.53, 54.73, 51.53]
+2026-01-29 17:41:09 - root - INFO: - 1-Cov: [80.59, 80.41, 79.68, 80.03, 79.18]
+2026-01-29 17:41:09 - root - INFO: - 
+			AP	mean: 44.25    std: 1.07
+			1-HL	mean: 98.78    std: 0.03
+			1-RL	mean: 91.42    std: 0.18
+			AUC	mean: 91.70    std: 0.18
+			1-OE	mean: 52.28    std: 1.54
+			1-Cov	mean: 79.98    std: 0.51
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案4：优化模型结构
+2026-01-29 21:00:50 - root - INFO: - --------------------Training over--------------------
+2026-01-29 21:00:50 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-29 21:00:50 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-29 21:00:50 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-29 21:00:50 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-29 21:00:50 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-29 21:00:50 - root - INFO: - early_stop:False			mode:attention
+2026-01-29 21:00:50 - root - INFO: - AP: [43.23, 44.61, 43.21, 45.9, 44.22]
+2026-01-29 21:00:50 - root - INFO: - 1-HL: [98.78, 98.79, 98.77, 98.84, 98.75]
+2026-01-29 21:00:50 - root - INFO: - 1-RL: [91.61, 91.26, 91.51, 91.49, 91.0]
+2026-01-29 21:00:50 - root - INFO: - AUC: [91.86, 91.58, 91.76, 91.73, 91.31]
+2026-01-29 21:00:50 - root - INFO: - 1-OE: [51.53, 53.4, 49.4, 54.06, 52.6]
+2026-01-29 21:00:50 - root - INFO: - 1-Cov: [80.57, 79.9, 79.76, 79.74, 79.22]
+2026-01-29 21:00:50 - root - INFO: - 
+			AP	mean: 44.23    std: 1.00
+			1-HL	mean: 98.79    std: 0.03
+			1-RL	mean: 91.37    std: 0.22
+			AUC	mean: 91.65    std: 0.19
+			1-OE	mean: 52.20    std: 1.63
+			1-Cov	mean: 79.84    std: 0.43
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+python train.py --dataset=corel5k --batch-size=64 --lr=2e-4 --weight-decay=1e-4 --use-trustworthy=True --trustworthy-fusion=trust
+2026-01-30 15:56:26 - root - INFO: - --------------------Training over--------------------
+2026-01-30 15:56:26 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-30 15:56:26 - root - INFO: - learning_rate:2e-04	epochs:100				batch_size:64		seed:1
+2026-01-30 15:56:26 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-30 15:56:26 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-30 15:56:26 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-30 15:56:26 - root - INFO: - early_stop:False			mode:attention
+2026-01-30 15:56:26 - root - INFO: - AP: [43.37, 44.49, 43.1, 45.58, 44.38]
+2026-01-30 15:56:26 - root - INFO: - 1-HL: [98.78, 98.77, 98.76, 98.83, 98.72]
+2026-01-30 15:56:26 - root - INFO: - 1-RL: [91.73, 91.43, 91.67, 91.5, 91.37]
+2026-01-30 15:56:26 - root - INFO: - AUC: [91.98, 91.76, 92.0, 91.75, 91.67]
+2026-01-30 15:56:26 - root - INFO: - 1-OE: [50.73, 53.13, 49.8, 53.66, 52.2]
+2026-01-30 15:56:26 - root - INFO: - 1-Cov: [80.65, 80.06, 80.4, 79.85, 80.0]
+2026-01-30 15:56:26 - root - INFO: - 
+			AP	mean: 44.18    std: 0.88
+			1-HL	mean: 98.77    std: 0.03
+			1-RL	mean: 91.54    std: 0.14
+			AUC	mean: 91.83    std: 0.13
+			1-OE	mean: 51.90    std: 1.45
+			1-Cov	mean: 80.19    std: 0.29
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+2026-01-30 20:21:57 - root - INFO: - --------------------Training over--------------------
+2026-01-30 20:21:57 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-01-30 20:21:57 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-01-30 20:21:57 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-01-30 20:21:57 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-01-30 20:21:57 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-01-30 20:21:57 - root - INFO: - early_stop:False			mode:attention
+2026-01-30 20:21:57 - root - INFO: - AP: [43.08, 44.63, 44.08, 45.93, 43.78]
+2026-01-30 20:21:57 - root - INFO: - 1-HL: [98.78, 98.79, 98.77, 98.83, 98.76]
+2026-01-30 20:21:57 - root - INFO: - 1-RL: [91.64, 91.29, 91.52, 91.55, 91.14]
+2026-01-30 20:21:57 - root - INFO: - AUC: [91.89, 91.61, 91.76, 91.77, 91.44]
+2026-01-30 20:21:57 - root - INFO: - 1-OE: [50.6, 51.93, 51.93, 54.59, 50.2]
+2026-01-30 20:21:57 - root - INFO: - 1-Cov: [80.71, 80.08, 79.8, 80.17, 79.33]
+2026-01-30 20:21:57 - root - INFO: - 
+			AP	mean: 44.30    std: 0.96
+			1-HL	mean: 98.79    std: 0.03
+			1-RL	mean: 91.43    std: 0.18
+			AUC	mean: 91.70    std: 0.15
+			1-OE	mean: 51.85    std: 1.54
+			1-Cov	mean: 80.02    std: 0.45
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46
+2026-02-04 20:09:05 - root - INFO: - --------------------Training over--------------------
+2026-02-04 20:09:05 - root - INFO: - dataset:corel5k            training_rate:0.7               data_ms_rate:0.5        label_ms_rate:0.5
+2026-02-04 20:09:05 - root - INFO: - learning_rate:1e-04        epochs:100                              batch_size:128          seed:1  
+2026-02-04 20:09:05 - root - INFO: - alpha:3e-02                        beta:5e-03                              gamma:0.7              mask_rate:0.5
+2026-02-04 20:09:05 - root - INFO: - ins_temperature:0.5        label_temperature:1.0   threshold:0.10          fold:4
+2026-02-04 20:09:05 - root - INFO: - network_dropout:0.5        embedding_dim:768               mid_dim:1024            layer_num:3     
+2026-02-04 20:09:05 - root - INFO: - early_stop:True                    mode:attention
+2026-02-04 20:09:05 - root - INFO: - AP: [43.27, 44.58, 44.08, 46.12, 44.26]
+2026-02-04 20:09:05 - root - INFO: - 1-HL: [98.78, 98.78, 98.76, 98.82, 98.76]
+2026-02-04 20:09:05 - root - INFO: - 1-RL: [91.57, 91.14, 91.25, 91.47, 90.96]
+2026-02-04 20:09:05 - root - INFO: - AUC: [91.8, 91.48, 91.53, 91.71, 91.24]
+2026-02-04 20:09:05 - root - INFO: - 1-OE: [51.13, 52.46, 51.53, 55.26, 50.47]
+2026-02-04 20:09:05 - root - INFO: - 1-Cov: [80.17, 79.66, 79.26, 79.77, 78.73]
+2026-02-04 20:09:05 - root - INFO: -
+                        AP      mean: 44.46    std: 0.94
+                        1-HL    mean: 98.78    std: 0.02
+                        1-RL    mean: 91.28    std: 0.22
+                        AUC     mean: 91.55    std: 0.19
+                        1-OE    mean: 52.17    std: 1.67
+                        1-Cov   mean: 79.52    std: 0.49
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+2026-03-02 19:50:29 - root - INFO: - --------------------Training over--------------------
+2026-03-02 19:50:29 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-02 19:50:29 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-03-02 19:50:29 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-02 19:50:29 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:4
+2026-03-02 19:50:29 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-02 19:50:29 - root - INFO: - early_stop:False			mode:attention
+2026-03-02 19:50:29 - root - INFO: - AP: [43.44, 44.79, 43.82, 46.03, 44.06]
+2026-03-02 19:50:29 - root - INFO: - 1-HL: [98.79, 98.79, 98.77, 98.83, 98.76]
+2026-03-02 19:50:29 - root - INFO: - 1-RL: [91.77, 91.52, 91.64, 91.78, 91.41]
+2026-03-02 19:50:29 - root - INFO: - AUC: [91.96, 91.8, 91.95, 91.99, 91.71]
+2026-03-02 19:50:29 - root - INFO: - 1-OE: [52.46, 52.2, 52.2, 53.66, 51.26]
+2026-03-02 19:50:29 - root - INFO: - 1-Cov: [80.73, 80.29, 80.28, 80.53, 80.12]
+2026-03-02 19:50:29 - root - INFO: - 
+			AP	mean: 44.43    std: 0.91
+			1-HL	mean: 98.79    std: 0.03
+			1-RL	mean: 91.62    std: 0.14
+			AUC	mean: 91.88    std: 0.11
+			1-OE	mean: 52.36    std: 0.77
+			1-Cov	mean: 80.39    std: 0.22
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+2026-03-02 21:51:34 - root - INFO: - --------------------Training over--------------------
+2026-03-02 21:51:34 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-02 21:51:34 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-03-02 21:51:34 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-02 21:51:34 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-02 21:51:34 - root - INFO: - network_dropout:0.5	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-02 21:51:34 - root - INFO: - early_stop:False			mode:attention
+2026-03-02 21:51:34 - root - INFO: - AP: [43.44, 44.79, 43.82, 46.03, 44.06, 44.12, 45.0, 42.84, 44.14, 43.92]
+2026-03-02 21:51:34 - root - INFO: - 1-HL: [98.79, 98.79, 98.77, 98.83, 98.76, 98.8, 98.76, 98.75, 98.78, 98.78]
+2026-03-02 21:51:34 - root - INFO: - 1-RL: [91.77, 91.52, 91.64, 91.78, 91.41, 91.38, 91.68, 91.24, 91.98, 91.59]
+2026-03-02 21:51:34 - root - INFO: - AUC: [91.96, 91.8, 91.95, 91.99, 91.71, 91.51, 92.03, 91.44, 92.26, 91.61]
+2026-03-02 21:51:34 - root - INFO: - 1-OE: [52.46, 52.2, 52.2, 53.66, 51.26, 51.93, 53.79, 52.06, 50.87, 51.93]
+2026-03-02 21:51:34 - root - INFO: - 1-Cov: [80.73, 80.29, 80.28, 80.53, 80.12, 79.42, 80.37, 79.64, 81.02, 80.26]
+2026-03-02 21:51:34 - root - INFO: - 
+			AP	mean: 44.22    std: 0.84
+			1-HL	mean: 98.78    std: 0.02
+			1-RL	mean: 91.60    std: 0.21
+			AUC	mean: 91.82    std: 0.24
+			1-OE	mean: 52.24    std: 0.87
+			1-Cov	mean: 80.27    std: 0.45
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=2，dropout=0.7
+2026-03-03 14:25:12 - root - INFO: - --------------------Training over--------------------
+2026-03-03 14:25:12 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-03 14:25:12 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:2
+2026-03-03 14:25:12 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-03 14:25:12 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-03 14:25:12 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-03 14:25:12 - root - INFO: - early_stop:False			mode:attention
+2026-03-03 14:25:12 - root - INFO: - AP: [43.6, 44.16, 43.19, 45.45, 44.06, 43.34, 44.03, 42.83, 42.75, 42.72]
+2026-03-03 14:25:12 - root - INFO: - 1-HL: [98.8, 98.79, 98.78, 98.83, 98.78, 98.81, 98.78, 98.77, 98.78, 98.77]
+2026-03-03 14:25:12 - root - INFO: - 1-RL: [92.05, 91.71, 92.03, 92.04, 91.7, 91.63, 91.67, 91.4, 91.86, 91.8]
+2026-03-03 14:25:12 - root - INFO: - AUC: [92.21, 92.04, 92.4, 92.3, 92.03, 91.76, 92.07, 91.61, 92.14, 91.84]
+2026-03-03 14:25:12 - root - INFO: - 1-OE: [52.33, 52.2, 51.13, 53.4, 50.73, 51.53, 52.33, 52.46, 48.74, 48.6]
+2026-03-03 14:25:12 - root - INFO: - 1-Cov: [81.58, 81.18, 81.17, 81.1, 80.92, 79.9, 80.14, 80.16, 80.61, 80.82]
+2026-03-03 14:25:12 - root - INFO: - 
+			AP	mean: 43.61    std: 0.80
+			1-HL	mean: 98.79    std: 0.02
+			1-RL	mean: 91.79    std: 0.20
+			AUC	mean: 92.04    std: 0.23
+			1-OE	mean: 51.34    std: 1.51
+			1-Cov	mean: 80.76    std: 0.52
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7,epoch=100-提升不大
+2026-03-03 17:27:55 - root - INFO: - --------------------Training over--------------------
+2026-03-03 17:27:55 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-03 17:27:55 - root - INFO: - learning_rate:1e-04	epochs:100				batch_size:128		seed:1
+2026-03-03 17:27:55 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-03 17:27:55 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-03 17:27:55 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-03 17:27:55 - root - INFO: - early_stop:False			mode:attention
+2026-03-03 17:27:55 - root - INFO: - AP: [43.76, 43.83, 43.05, 45.32, 44.44, 43.05, 44.22, 42.8, 42.41, 43.49]
+2026-03-03 17:27:55 - root - INFO: - 1-HL: [98.8, 98.78, 98.77, 98.82, 98.78, 98.8, 98.78, 98.77, 98.77, 98.77]
+2026-03-03 17:27:55 - root - INFO: - 1-RL: [92.2, 91.61, 92.21, 92.19, 91.81, 91.53, 91.76, 91.35, 91.74, 91.71]
+2026-03-03 17:27:55 - root - INFO: - AUC: [92.35, 91.94, 92.55, 92.39, 92.07, 91.66, 92.17, 91.57, 92.02, 91.74]
+2026-03-03 17:27:55 - root - INFO: - 1-OE: [52.6, 51.26, 50.33, 54.33, 53.53, 51.4, 52.6, 51.13, 48.34, 51.13]
+2026-03-03 17:27:55 - root - INFO: - 1-Cov: [81.69, 80.72, 81.43, 81.3, 80.92, 79.58, 80.43, 80.14, 80.69, 80.72]
+2026-03-03 17:27:55 - root - INFO: - 
+			AP	mean: 43.64    std: 0.82
+			1-HL	mean: 98.79    std: 0.02
+			1-RL	mean: 91.81    std: 0.28
+			AUC	mean: 92.05    std: 0.31
+			1-OE	mean: 51.66    std: 1.61
+			1-Cov	mean: 80.76    std: 0.59
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+2026-03-03 23:26:48 - root - INFO: - --------------------Training over--------------------
+2026-03-03 23:26:48 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-03 23:26:48 - root - INFO: - learning_rate:1e-04	epochs:300				batch_size:128		seed:1
+2026-03-03 23:26:48 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-03 23:26:48 - root - INFO: - ins_temperature:0.5	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-03 23:26:48 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-03 23:26:48 - root - INFO: - early_stop:False			mode:attention
+2026-03-03 23:26:48 - root - INFO: - AP: [44.5, 45.37, 44.42, 46.54, 44.85, 44.35, 44.78, 43.37, 44.13, 44.57]
+2026-03-03 23:26:48 - root - INFO: - 1-HL: [98.79, 98.78, 98.77, 98.85, 98.78, 98.82, 98.77, 98.78, 98.79, 98.79]
+2026-03-03 23:26:48 - root - INFO: - 1-RL: [92.19, 91.94, 92.16, 92.26, 91.92, 91.8, 91.89, 91.49, 92.1, 91.81]
+2026-03-03 23:26:48 - root - INFO: - AUC: [92.41, 92.28, 92.51, 92.47, 92.19, 91.95, 92.31, 91.72, 92.38, 91.81]
+2026-03-03 23:26:48 - root - INFO: - 1-OE: [53.79, 53.79, 53.26, 55.13, 52.73, 52.73, 53.4, 52.46, 50.73, 52.46]
+2026-03-03 23:26:48 - root - INFO: - 1-Cov: [82.08, 81.59, 81.53, 81.84, 81.21, 80.47, 81.06, 80.56, 81.16, 80.86]
+2026-03-03 23:26:48 - root - INFO: - 
+			AP	mean: 44.69    std: 0.79
+			1-HL	mean: 98.79    std: 0.02
+			1-RL	mean: 91.96    std: 0.22
+			AUC	mean: 92.20    std: 0.26
+			1-OE	mean: 53.05    std: 1.09
+			1-Cov	mean: 81.24    std: 0.50
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+2026-03-04 13:10:36 - root - INFO: - --------------------Training over--------------------
+2026-03-04 13:10:36 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-04 13:10:36 - root - INFO: - learning_rate:1e-04	epochs:300				batch_size:128		seed:1
+2026-03-04 13:10:36 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-04 13:10:36 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-04 13:10:36 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-04 13:10:36 - root - INFO: - early_stop:False			mode:attention
+2026-03-04 13:10:36 - root - INFO: - AP: [44.46, 45.46, 45.02, 46.75, 45.03, 44.6, 45.02, 43.44, 44.66, 44.6]
+2026-03-04 13:10:36 - root - INFO: - 1-HL: [98.79, 98.79, 98.78, 98.84, 98.78, 98.8, 98.79, 98.79, 98.79, 98.81]
+2026-03-04 13:10:36 - root - INFO: - 1-RL: [92.28, 91.81, 92.23, 92.38, 92.05, 91.98, 92.03, 91.51, 92.25, 91.99]
+2026-03-04 13:10:36 - root - INFO: - AUC: [92.48, 92.15, 92.57, 92.58, 92.3, 92.11, 92.45, 91.72, 92.51, 91.99]
+2026-03-04 13:10:36 - root - INFO: - 1-OE: [54.19, 54.06, 53.26, 54.99, 51.66, 52.86, 52.6, 52.06, 51.93, 52.86]
+2026-03-04 13:10:36 - root - INFO: - 1-Cov: [82.27, 81.41, 81.68, 82.14, 81.4, 80.87, 81.16, 80.55, 81.45, 81.25]
+2026-03-04 13:10:36 - root - INFO: - 
+			AP	mean: 44.90    std: 0.80
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 92.05    std: 0.24
+			AUC	mean: 92.29    std: 0.27
+			1-OE	mean: 53.05    std: 1.03
+			1-Cov	mean: 81.42    std: 0.49
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+#调整动充权重调度器的预热比例：在dvnamic_weight_scheduler.py中，把warmupratio=0.4，效果标准差范围变小了-可行
+2026-03-06 03:02:41 - root - INFO: - --------------------Training over--------------------
+2026-03-06 03:02:41 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-06 03:02:41 - root - INFO: - learning_rate:1e-04	epochs:300				batch_size:128		seed:1
+2026-03-06 03:02:41 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-06 03:02:41 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-06 03:02:41 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-06 03:02:41 - root - INFO: - early_stop:False			mode:attention
+2026-03-06 03:02:41 - root - INFO: - AP: [44.4, 45.36, 44.88, 46.15, 44.9, 44.24, 44.94, 43.38, 44.76, 44.55]
+2026-03-06 03:02:41 - root - INFO: - 1-HL: [98.79, 98.78, 98.77, 98.84, 98.78, 98.81, 98.77, 98.78, 98.79, 98.8]
+2026-03-06 03:02:41 - root - INFO: - 1-RL: [92.18, 91.85, 92.14, 92.3, 91.96, 91.85, 92.05, 91.38, 92.24, 91.79]
+2026-03-06 03:02:41 - root - INFO: - AUC: [92.4, 92.22, 92.5, 92.49, 92.24, 91.98, 92.46, 91.61, 92.5, 91.79]
+2026-03-06 03:02:41 - root - INFO: - 1-OE: [54.06, 53.79, 54.06, 53.93, 51.93, 51.8, 53.13, 53.26, 52.2, 53.13]
+2026-03-06 03:02:41 - root - INFO: - 1-Cov: [82.03, 81.52, 81.51, 81.75, 81.33, 80.65, 81.31, 80.37, 81.47, 80.84]
+2026-03-06 03:02:41 - root - INFO: - 
+			AP	mean: 44.76    std: 0.69
+			1-HL	mean: 98.79    std: 0.02
+			1-RL	mean: 91.97    std: 0.26
+			AUC	mean: 92.22    std: 0.31
+			1-OE	mean: 53.13    std: 0.83
+			1-Cov	mean: 81.28    std: 0.48
+
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+#基于上面
+#在dynamic_weight_scheduler.py文件中修改self.warmup_ratio = 0.2---OE效果提升了0.5%，其他评估指标均没变化-成功
+2026-03-06 12:48:03 - root - INFO: - --------------------Training over--------------------
+2026-03-06 12:48:03 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-06 12:48:03 - root - INFO: - learning_rate:1e-04	epochs:300				batch_size:128		seed:1
+2026-03-06 12:48:03 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-06 12:48:03 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-06 12:48:03 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-06 12:48:03 - root - INFO: - early_stop:True			mode:attention
+2026-03-06 12:48:03 - root - INFO: - AP: [44.14, 45.23, 44.49, 46.63, 45.2, 44.15, 45.45, 44.04, 44.31, 44.67]
+2026-03-06 12:48:03 - root - INFO: - 1-HL: [98.8, 98.78, 98.79, 98.84, 98.79, 98.81, 98.78, 98.78, 98.79, 98.8]
+2026-03-06 12:48:03 - root - INFO: - 1-RL: [92.36, 91.84, 92.24, 92.33, 92.03, 91.9, 92.0, 91.55, 92.24, 91.9]
+2026-03-06 12:48:03 - root - INFO: - AUC: [92.59, 92.18, 92.6, 92.52, 92.28, 92.04, 92.42, 91.78, 92.48, 91.9]
+2026-03-06 12:48:03 - root - INFO: - 1-OE: [53.26, 52.6, 53.26, 56.19, 54.06, 52.6, 54.59, 53.79, 52.06, 52.73]
+2026-03-06 12:48:03 - root - INFO: - 1-Cov: [82.4, 81.49, 81.71, 81.86, 81.45, 80.59, 81.19, 80.57, 81.43, 81.1]
+2026-03-06 12:48:03 - root - INFO: - 
+			AP	mean: 44.83    std: 0.77
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 92.04    std: 0.24
+			AUC	mean: 92.28    std: 0.28
+			1-OE	mean: 53.52    std: 1.15
+			1-Cov	mean: 81.38    std: 0.53
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+#基于上面
+#在dynamic_weight_scheduler.py文件中修改self.warmup_ratio = 0.1，AP提升到了44.96-其他评估指标一小点提升
+2026-03-06 18:07:24 - root - INFO: - --------------------Training over--------------------
+2026-03-06 18:07:24 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-06 18:07:24 - root - INFO: - learning_rate:1e-04	epochs:300				batch_size:128		seed:1
+2026-03-06 18:07:24 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-06 18:07:24 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-06 18:07:24 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-06 18:07:24 - root - INFO: - early_stop:True			mode:attention
+2026-03-06 18:07:24 - root - INFO: - AP: [44.49, 45.39, 44.4, 46.78, 45.45, 44.96, 45.42, 43.61, 44.69, 44.4]
+2026-03-06 18:07:24 - root - INFO: - 1-HL: [98.79, 98.79, 98.79, 98.85, 98.78, 98.81, 98.78, 98.78, 98.78, 98.8]
+2026-03-06 18:07:24 - root - INFO: - 1-RL: [92.38, 91.92, 92.21, 92.41, 92.11, 91.97, 91.8, 91.65, 92.15, 91.91]
+2026-03-06 18:07:24 - root - INFO: - AUC: [92.6, 92.26, 92.58, 92.63, 92.4, 92.1, 92.22, 91.86, 92.4, 91.91]
+2026-03-06 18:07:24 - root - INFO: - 1-OE: [54.73, 53.53, 52.2, 54.59, 53.26, 54.19, 54.46, 52.06, 52.33, 52.33]
+2026-03-06 18:07:24 - root - INFO: - 1-Cov: [82.31, 81.69, 81.5, 81.99, 81.76, 80.87, 80.79, 80.71, 81.37, 81.19]
+2026-03-06 18:07:24 - root - INFO: - 
+			AP	mean: 44.96    std: 0.82
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 92.05    std: 0.23
+			AUC	mean: 92.30    std: 0.26
+			1-OE	mean: 53.37    std: 1.02
+			1-Cov	mean: 81.42    std: 0.51
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+#基于上面
+#在dynamic_weight_scheduler.py文件中修改self.warmup_ratio = 0.1，AP提升到了44.96-其他评估指标一小点提升
+#所有损失都整理到loss....
+2026-03-16 00:58:16 - root - INFO: - --------------------Training over--------------------
+2026-03-16 00:58:16 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-16 00:58:16 - root - INFO: - learning_rate:1e-04	epochs:300				batch_size:128		seed:1
+2026-03-16 00:58:16 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-16 00:58:16 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-16 00:58:16 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-16 00:58:16 - root - INFO: - early_stop:True			mode:reconstruction
+2026-03-16 00:58:16 - root - INFO: - AP: [44.49, 45.39, 44.4, 46.78, 45.45, 44.96, 45.42, 43.61, 44.69, 44.4]
+2026-03-16 00:58:16 - root - INFO: - 1-HL: [98.79, 98.79, 98.79, 98.85, 98.78, 98.81, 98.78, 98.78, 98.78, 98.8]
+2026-03-16 00:58:16 - root - INFO: - 1-RL: [92.38, 91.92, 92.21, 92.41, 92.11, 91.97, 91.8, 91.65, 92.15, 91.91]
+2026-03-16 00:58:16 - root - INFO: - AUC: [92.6, 92.26, 92.58, 92.63, 92.4, 92.1, 92.22, 91.86, 92.4, 91.91]
+2026-03-16 00:58:16 - root - INFO: - 1-OE: [54.73, 53.53, 52.2, 54.59, 53.26, 54.19, 54.46, 52.06, 52.33, 52.33]
+2026-03-16 00:58:16 - root - INFO: - 1-Cov: [82.31, 81.69, 81.5, 81.99, 81.76, 80.87, 80.79, 80.71, 81.37, 81.19]
+2026-03-16 00:58:16 - root - INFO: - 
+			AP	mean: 44.96    std: 0.82
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 92.05    std: 0.23
+			AUC	mean: 92.30    std: 0.26
+			1-OE	mean: 53.37    std: 1.02
+			1-Cov	mean: 81.42    std: 0.51
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+#基于上面
+#在dynamic_weight_scheduler.py文件中修改self.warmup_ratio = 0.1，AP提升到了44.96-其他评估指标一小点提升
+#所有损失都整理到loss....
+#default='trust'改成为attention
+#parser.add_argument('--trustworthy-fusion', type=str, default='attention', choices=['attention', 'gated', 'trust'],help='Fusion type for trustworthy module')
+2026-03-22 03:35:50 - root - INFO: - --------------------Training over--------------------
+2026-03-22 03:35:50 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-22 03:35:50 - root - INFO: - learning_rate:1e-04	epochs:500				batch_size:64		seed:1
+2026-03-22 03:35:50 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-22 03:35:50 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-22 03:35:50 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-22 03:35:50 - root - INFO: - early_stop:True			mode:reconstruction
+2026-03-22 03:35:50 - root - INFO: - AP: [44.7, 46.05, 45.35, 47.5, 45.68, 45.42, 46.05, 44.19, 45.05, 45.42]
+2026-03-22 03:35:50 - root - INFO: - 1-HL: [98.81, 98.8, 98.78, 98.85, 98.79, 98.82, 98.79, 98.79, 98.79, 98.81]
+2026-03-22 03:35:50 - root - INFO: - 1-RL: [92.32, 92.15, 92.52, 92.5, 92.38, 92.12, 91.84, 91.92, 92.44, 92.49]
+2026-03-22 03:35:50 - root - INFO: - AUC: [92.61, 92.53, 92.89, 92.73, 92.64, 92.33, 92.26, 92.16, 92.67, 92.46]
+2026-03-22 03:35:50 - root - INFO: - 1-OE: [54.06, 54.86, 54.19, 56.06, 52.73, 54.19, 54.86, 53.0, 52.2, 53.4]
+2026-03-22 03:35:50 - root - INFO: - 1-Cov: [82.27, 81.97, 82.05, 82.16, 81.94, 80.99, 80.65, 81.0, 81.7, 81.79]
+2026-03-22 03:35:50 - root - INFO: - 
+			AP	mean: 45.54    std: 0.85
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 92.27    std: 0.24
+			AUC	mean: 92.53    std: 0.21
+			1-OE	mean: 53.95    std: 1.10
+			1-Cov	mean: 81.65    std: 0.54
+
+
+
+##删除了correlation-guide label-level contrastive learning模块，性能提升到了44.11，再减少run-times到5次，性能提升到了44.22（删除了注意力融合模块 ，只保留了重构补全缺失视图模块）
+#在上述基础上，引入了可信多视图学习，在AP上性能提升不明显，但在其他评估指标上有提升，其他每个评估上大概提升了0.2%
+#加上方案1：优化学习率和批次大小
+#然后解决了训练过程中出现的 loss_trust: nan 、总损失 loss: nan 以及 loss_uncertainty 为负数的问题，AP提升到44.30
+#再实施动态权重调度策略，动态权重调度策略的好处是在训练初期通过较小的权重值让模型更加稳定，避免训练不稳定问题，而在训练后期通过较大的权重值强化各个损失项的约束，从而提高模型性能。
+#AP提升到了44.46		
+#引入了 变分自编码器（VAE）缺失数据插补模块，绝大部分评估性能均有提升-提升还不小
+#run-times=10次
+＃seek=1，dropout=0.7
+#epoch=300-提升史无前例......
+#修改了--alpha 5e-2       # 增大对比学习权重    
+--gamma 0.9       # 增大重建权重      
+--ins-temperature 0.3      # 降低温度使对比更明确
+#基于上面
+#在dynamic_weight_scheduler.py文件中修改self.warmup_ratio = 0.1，AP提升到了44.96-其他评估指标一小点提升
+#所有损失都整理到loss....
+##default='attention'改成为trust
+#parser.add_argument('--trustworthy-fusion', type=str, default='trust', choices=['attention', 'gated', 'trust'],help='Fusion type for trustworthy module')
+2026-03-23 19:14:20 - root - INFO: - --------------------Training over--------------------
+2026-03-23 19:14:20 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-03-23 19:14:20 - root - INFO: - learning_rate:1e-04	epochs:500				batch_size:64		seed:1
+2026-03-23 19:14:20 - root - INFO: - alpha:3e-02			beta:5e-03				gamma:0.7		mask_rate:0.5
+2026-03-23 19:14:20 - root - INFO: - ins_temperature:0.3	label_temperature:1.0	threshold:0.10		fold:9
+2026-03-23 19:14:20 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-03-23 19:14:20 - root - INFO: - early_stop:True			mode:reconstruction
+2026-03-23 19:14:20 - root - INFO: - AP: [45.14, 45.91, 45.29, 47.74, 45.99, 45.03, 45.59, 44.86, 44.94, 45.94]
+2026-03-23 19:14:20 - root - INFO: - 1-HL: [98.81, 98.81, 98.79, 98.85, 98.79, 98.82, 98.81, 98.79, 98.8, 98.81]
+2026-03-23 19:14:20 - root - INFO: - 1-RL: [92.4, 92.22, 92.57, 92.67, 92.34, 91.96, 91.84, 91.79, 92.38, 92.44]
+2026-03-23 19:14:20 - root - INFO: - AUC: [92.68, 92.55, 92.94, 92.88, 92.62, 92.16, 92.24, 92.03, 92.63, 92.43]
+2026-03-23 19:14:20 - root - INFO: - 1-OE: [53.93, 54.06, 54.06, 56.59, 54.46, 53.79, 54.33, 54.33, 52.33, 54.86]
+2026-03-23 19:14:20 - root - INFO: - 1-Cov: [82.42, 82.18, 82.16, 82.45, 81.99, 80.96, 80.65, 80.69, 81.49, 81.94]
+2026-03-23 19:14:20 - root - INFO: - 
+			AP	mean: 45.64    std: 0.81
+			1-HL	mean: 98.81    std: 0.02
+			1-RL	mean: 92.26    std: 0.29
+			AUC	mean: 92.51    std: 0.29
+			1-OE	mean: 54.27    std: 1.00
+			1-Cov	mean: 81.69    std: 0.66
+
+2026-05-27 23:38:24 - root - INFO: - --------------------Training over--------------------
+2026-05-27 23:38:24 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-05-27 23:38:24 - root - INFO: - learning_rate:1e-04	epochs:500				batch_size:64		seed:1
+2026-05-27 23:38:24 - root - INFO: - alpha:3e-02			gamma:0.7		mask_rate:0.5
+2026-05-27 23:38:24 - root - INFO: - ins_temperature:0.3	fold:9
+2026-05-27 23:38:24 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-05-27 23:38:24 - root - INFO: - early_stop:True
+2026-05-27 23:38:24 - root - INFO: - AP: [45.14, 45.91, 45.29, 47.74, 45.99, 45.03, 45.59, 44.86, 44.94, 45.94]
+2026-05-27 23:38:24 - root - INFO: - 1-HL: [98.81, 98.81, 98.79, 98.85, 98.79, 98.82, 98.81, 98.79, 98.8, 98.81]
+2026-05-27 23:38:24 - root - INFO: - 1-RL: [92.4, 92.22, 92.57, 92.67, 92.34, 91.96, 91.84, 91.79, 92.38, 92.44]
+2026-05-27 23:38:24 - root - INFO: - AUC: [92.68, 92.55, 92.94, 92.88, 92.62, 92.16, 92.24, 92.03, 92.63, 92.43]
+2026-05-27 23:38:24 - root - INFO: - 1-OE: [53.93, 54.06, 54.06, 56.59, 54.46, 53.79, 54.33, 54.33, 52.33, 54.86]
+2026-05-27 23:38:24 - root - INFO: - 1-Cov: [82.42, 82.18, 82.16, 82.45, 81.99, 80.96, 80.65, 80.69, 81.49, 81.94]
+2026-05-27 23:38:24 - root - INFO: - 
+			AP	mean: 45.64    std: 0.81
+			1-HL	mean: 98.81    std: 0.02
+			1-RL	mean: 92.26    std: 0.29
+			AUC	mean: 92.51    std: 0.29
+			1-OE	mean: 54.27    std: 1.00
+			1-Cov	mean: 81.69    std: 0.66
+
+2026-05-30 15:38:03 - root - INFO: - --------------------Training over--------------------
+2026-05-30 15:38:03 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-05-30 15:38:03 - root - INFO: - learning_rate:1e-04	epochs:500				batch_size:64		seed:1
+2026-05-30 15:38:03 - root - INFO: - alpha:3e-02			gamma:0.7		mask_rate:0.5
+2026-05-30 15:38:03 - root - INFO: - ins_temperature:0.3	fold:9
+2026-05-30 15:38:03 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-05-30 15:38:03 - root - INFO: - early_stop:True
+2026-05-30 15:38:03 - root - INFO: - AP: [45.14, 45.91, 45.29, 47.74, 45.99, 45.03, 45.59, 44.86, 44.94, 45.94]
+2026-05-30 15:38:03 - root - INFO: - 1-HL: [98.81, 98.81, 98.79, 98.85, 98.79, 98.82, 98.81, 98.79, 98.8, 98.81]
+2026-05-30 15:38:03 - root - INFO: - 1-RL: [92.4, 92.22, 92.57, 92.67, 92.34, 91.96, 91.84, 91.79, 92.38, 92.44]
+2026-05-30 15:38:03 - root - INFO: - AUC: [92.68, 92.55, 92.94, 92.88, 92.62, 92.16, 92.24, 92.03, 92.63, 92.43]
+2026-05-30 15:38:03 - root - INFO: - 1-OE: [53.93, 54.06, 54.06, 56.59, 54.46, 53.79, 54.33, 54.33, 52.33, 54.86]
+2026-05-30 15:38:03 - root - INFO: - 1-Cov: [82.42, 82.18, 82.16, 82.45, 81.99, 80.96, 80.65, 80.69, 81.49, 81.94]
+2026-05-30 15:38:03 - root - INFO: - 
+			AP	mean: 45.64    std: 0.81
+			1-HL	mean: 98.81    std: 0.02
+			1-RL	mean: 92.26    std: 0.29
+			AUC	mean: 92.51    std: 0.29
+			1-OE	mean: 54.27    std: 1.00
+			1-Cov	mean: 81.69    std: 0.66
+
+2026-07-21 00:08:40 - root - INFO: - --------------------Training over--------------------
+2026-07-21 00:08:40 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-07-21 00:08:40 - root - INFO: - learning_rate:1e-04	epochs:500				batch_size:64		seed:1
+2026-07-21 00:08:40 - root - INFO: - alpha:3e-02			beta:0.7		gamma:3e-02		lambda_t:0.2		mask_rate:0.5
+2026-07-21 00:08:40 - root - INFO: - ins_temperature:0.3	fold:9
+2026-07-21 00:08:40 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-07-21 00:08:40 - root - INFO: - early_stop:True
+2026-07-21 00:08:40 - root - INFO: - AP: [44.4, 45.16, 44.7, 46.79, 44.78, 44.93, 44.7, 44.29, 44.53, 44.79]
+2026-07-21 00:08:40 - root - INFO: - 1-HL: [98.8, 98.79, 98.79, 98.83, 98.79, 98.82, 98.78, 98.79, 98.81, 98.8]
+2026-07-21 00:08:40 - root - INFO: - 1-RL: [92.06, 91.76, 92.24, 92.29, 92.0, 91.81, 91.58, 91.66, 92.15, 92.35]
+2026-07-21 00:08:40 - root - INFO: - AUC: [92.36, 92.14, 92.59, 92.53, 92.27, 92.03, 91.99, 91.86, 92.4, 92.36]
+2026-07-21 00:08:40 - root - INFO: - 1-OE: [53.0, 54.06, 52.46, 55.39, 53.4, 53.93, 50.87, 53.53, 51.8, 53.0]
+2026-07-21 00:08:40 - root - INFO: - 1-Cov: [81.55, 80.79, 81.21, 81.25, 81.05, 80.26, 79.9, 80.51, 80.87, 81.44]
+2026-07-21 00:08:40 - root - INFO: - 
+			AP	mean: 44.91    std: 0.67
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 91.99    std: 0.26
+			AUC	mean: 92.25    std: 0.23
+			1-OE	mean: 53.14    std: 1.19
+			1-Cov	mean: 80.88    std: 0.50
+lambda_t改为1.0，按老师方法改了，性能和原来差不多了
+2026-07-21 19:55:15 - root - INFO: - --------------------Training over--------------------
+2026-07-21 19:55:15 - root - INFO: - dataset:corel5k		training_rate:0.7		data_ms_rate:0.5	label_ms_rate:0.5
+2026-07-21 19:55:15 - root - INFO: - learning_rate:1e-04	epochs:500				batch_size:64		seed:1
+2026-07-21 19:55:15 - root - INFO: - alpha:3e-02			beta:0.7		gamma:3e-02		lambda_t:1.0		mask_rate:0.5
+2026-07-21 19:55:15 - root - INFO: - ins_temperature:0.3	fold:9
+2026-07-21 19:55:15 - root - INFO: - network_dropout:0.7	embedding_dim:768		mid_dim:1024		layer_num:3
+2026-07-21 19:55:15 - root - INFO: - early_stop:True
+2026-07-21 19:55:15 - root - INFO: - AP: [45.39, 45.92, 45.44, 46.95, 45.33, 45.32, 45.06, 44.38, 44.9, 45.44]
+2026-07-21 19:55:15 - root - INFO: - 1-HL: [98.81, 98.81, 98.8, 98.84, 98.77, 98.82, 98.79, 98.78, 98.79, 98.81]
+2026-07-21 19:55:15 - root - INFO: - 1-RL: [92.42, 92.11, 92.35, 92.45, 92.27, 92.13, 91.59, 91.76, 92.19, 92.31]
+2026-07-21 19:55:15 - root - INFO: - AUC: [92.68, 92.47, 92.69, 92.7, 92.55, 92.3, 92.01, 91.98, 92.49, 92.31]
+2026-07-21 19:55:15 - root - INFO: - 1-OE: [55.39, 55.26, 53.66, 54.73, 51.66, 54.46, 53.13, 52.2, 51.53, 53.66]
+2026-07-21 19:55:15 - root - INFO: - 1-Cov: [82.36, 81.87, 81.66, 82.0, 81.66, 80.91, 80.45, 80.72, 81.07, 81.44]
+2026-07-21 19:55:15 - root - INFO: - 
+			AP	mean: 45.41    std: 0.64
+			1-HL	mean: 98.80    std: 0.02
+			1-RL	mean: 92.16    std: 0.27
+			AUC	mean: 92.42    std: 0.25
+			1-OE	mean: 53.57    std: 1.35
+			1-Cov	mean: 81.41    std: 0.58
+
