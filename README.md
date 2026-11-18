@@ -55,20 +55,3 @@ python parameter_sensitivity_alpha_beta/run_alpha_beta_sensitivity.py
 
 具体参数和输出格式见 `parameter_sensitivity_alpha_beta/README.md`。
 
-## 名称迁移
-
-- `models/DSCN.py` / `DSCN` → `models/TVRL.py` / `TVRL`
-- `AdaptiveVAEImputation` → `VAEViewImputation`
-- `ViewTrustworthinessEvaluator` → `DualWeightedReliabilityEstimator`
-- `TrustworthyMultiViewModule` → `TrustworthyMultiLabelClassification`
-- `UncertaintyQuantifier` → `LabelWiseUncertaintyQuantifier`
-- `InstanceProject` → `CrossViewProjectionHead`
-- `ClassificationLayer` → `MultiLabelClassifier`
-- `InstanceLoss` → `MaskedCrossViewContrastiveLoss`
-- `WeightBCELoss` → `MaskedBCELoss`
-- `ReconstructionLoss` → `ViewReconstructionLoss`
-- `DynamicWeightScheduler` → `DynamicLossWeightScheduler`
-- `loss_MSIC` → `loss_con`；`loss_HMBC` → `loss_bce`
-- `loss_recon` → `loss_rec`；`loss_vae_imputation` → `loss_vae`；`loss_uncertainty` → `loss_unc`
-
-现有命令行参数名称保持兼容。数据、历史实验日志、统计结果和外层项目文件夹名称没有改写；旧日志中的旧损失名称属于历史记录。外部脚本若仍导入旧模型类或旧辅助类，需要按上表更新。带参数的子模块属性名称保持不变。
