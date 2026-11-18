@@ -1,5 +1,5 @@
 class DynamicLossWeightScheduler:
-    """TVI-Net dynamic loss weight scheduling during the warm-up period."""
+    """TVRL dynamic loss weight scheduling during the warm-up period."""
     def __init__(self, args, total_epochs):
         self.alpha_initial = 0.0
         self.alpha_target = getattr(args, 'alpha', 1e-2)

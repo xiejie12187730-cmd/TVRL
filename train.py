@@ -1,4 +1,4 @@
-"""Training and evaluation entry point for TVI-Net."""
+"""Training and evaluation entry point for TVRL."""
 
 import argparse
 import sys
@@ -6,7 +6,7 @@ import sys
 import torch
 
 from datasets.dataloader import MatDataset
-from models.TVINet import TVINet
+from models.TVRL import TVRL
 from utils.util import calc_res, get_logger, output_args, setup_seed
 
 
@@ -61,7 +61,7 @@ def get_args(dataset_name="corel5k", argv=None):
     parser.add_argument("--weight-decay", type=float, default=1.0)
     parser.add_argument("--run-times", type=int, default=10)
     parser.add_argument("--early-stop", type=bool, default=True)
-    parser.add_argument("--use-trustworthy", type=bool, default=True, help="Enable the TVI-Net auxiliary trustworthy multi-label classification branch")
+    parser.add_argument("--use-trustworthy", type=bool, default=True, help="Enable the TVRL auxiliary trustworthy multi-label classification branch")
     parser.add_argument(
         "--trustworthy-fusion",
         type=str,
@@ -131,11 +131,11 @@ def run_experiment(args, log_dir="results/logs/", record_dir="results/records/")
 
         logger = get_logger(args, main_dir=log_dir)
         try:
-            logger.info(f"--------------------TVI-Net training {args.fold_idx + 1} time--------------------")
+            logger.info(f"--------------------TVRL training {args.fold_idx + 1} time--------------------")
 
             output_args(logger, args)
 
-            model = TVINet(args, logger).to(args.device)
+            model = TVRL(args, logger).to(args.device)
             res = model.run_train(train_dataset, val_dataset, test_dataset)
 
             final_res.append(res)
@@ -144,7 +144,7 @@ def run_experiment(args, log_dir="results/logs/", record_dir="results/records/")
 
     logger = get_logger(args, main_dir=record_dir)
     try:
-        logger.info("--------------------TVI-Net training over--------------------")
+        logger.info("--------------------TVRL training over--------------------")
 
         output_args(logger, args)
         metrics = calc_res(logger, final_res)

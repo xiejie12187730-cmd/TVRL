@@ -40,7 +40,7 @@ class MaskedCrossViewContrastiveLoss(nn.Module):
 
 
 class MaskedBCELoss(nn.Module):
-    """Observed-label BCE used to build the TVI-Net classification loss L_bce."""
+    """Observed-label BCE used to build the TVRL classification loss L_bce."""
     def __init__(self, ):
         super(MaskedBCELoss, self).__init__()
 

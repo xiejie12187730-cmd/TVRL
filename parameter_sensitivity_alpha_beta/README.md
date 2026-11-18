@@ -1,6 +1,6 @@
-# TVI-Net Alpha-Beta Parameter Sensitivity
+# TVRL Alpha-Beta Parameter Sensitivity
 
-This folder contains the TVI-Net batch runner for the paper-formula parameters:
+This folder contains the TVRL batch runner for the paper-formula parameters:
 
 ```text
 L = alpha * L_vae + beta * L_rec + gamma * L_con + lambda_t * L_trust
@@ -31,6 +31,6 @@ Useful quick test:
 python parameter_sensitivity_alpha_beta/run_alpha_beta_sensitivity.py --epochs 1 --run-times 1
 ```
 
-The training entry point imports `TVINet` from `models/TVINet.py`. Parameter defaults and experiment calculations are unchanged by the naming update.
+The training entry point imports `TVRL` from `models/TVRL.py`. Parameter defaults and experiment calculations are unchanged by the naming update.
 
 The one-epoch command above only checks execution; its losses use the initial warm-up weights.

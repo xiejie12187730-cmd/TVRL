@@ -22,7 +22,7 @@ METRIC_NAMES = ["AP", "1-HL", "1-RL", "AUC", "1-OE", "1-Cov"]
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Run TVI-Net alpha-beta sensitivity experiments.")
+    parser = argparse.ArgumentParser(description="Run TVRL alpha-beta sensitivity experiments.")
     parser.add_argument("--dataset-name", type=str, default="corel5k")
     parser.add_argument("--alphas", type=float, nargs="+", default=ALPHA_VALUES)
     parser.add_argument("--betas", type=float, nargs="+", default=BETA_VALUES)

@@ -1,7 +1,7 @@
-TVI-Net：Trustworthy Variational Imputation Network
+TVRL
 
 训练入口：train.py
-模型实现：models/TVINet.py，Python 类名 TVINet。
+模型实现：models/TVRL.py，Python 类名 TVRL。
 
 框架图对应：
 (a) VAE-based View Imputation：VAEViewImputation。

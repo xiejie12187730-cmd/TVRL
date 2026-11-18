@@ -237,7 +237,7 @@ class TrustworthyMultiLabelClassification(nn.Module):
     """Framework (c): auxiliary trust-guided fusion and uncertainty quantification.
 
     Includes the dual-weighted reliability estimator from framework (b).
-    The primary classifier and L_bce are evaluated by TVINet."""
+    The primary classifier and L_bce are evaluated by TVRL."""
     def __init__(self, args, logger=None):
         super(TrustworthyMultiLabelClassification, self).__init__()
         self.hidden_dim = args.hidden

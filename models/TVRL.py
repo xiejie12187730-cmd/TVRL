@@ -1,4 +1,4 @@
-"""TVI-Net framework.
+"""TVRL framework.
 
 (a) VAE-based View Imputation.
 (b) Dual-weighted Multi-view Representation Learning.
@@ -22,10 +22,10 @@ from torch.nn.functional import normalize
 import time
 
 
-class TVINet(nn.Module):
-    """TVI-Net: Trustworthy Variational Imputation Network."""
+class TVRL(nn.Module):
+    """TVRL."""
     def __init__(self, args: Namespace, logger):
-        super(TVINet, self).__init__()
+        super(TVRL, self).__init__()
         self.sample_adj = None
         self.args = args
         self.logger = logger
@@ -287,7 +287,7 @@ class TVINet(nn.Module):
                     torch.cuda.empty_cache()
 
             inform = (
-                "[TVI-Net/train] ==> epoch[{}/{}], alpha:{:.4f}, beta:{:.4f}, gamma:{:.4f}, lambda_t:{:.4f}, uncertainty_weight:{:.4f}, loss_con:{:.2f}, loss_bce:{:.2f}, loss_rec:{:.2f}, loss:{:.2f}".format(
+                "[TVRL/train] ==> epoch[{}/{}], alpha:{:.4f}, beta:{:.4f}, gamma:{:.4f}, lambda_t:{:.4f}, uncertainty_weight:{:.4f}, loss_con:{:.2f}, loss_bce:{:.2f}, loss_rec:{:.2f}, loss:{:.2f}".format(
                     epoch + 1, self.args.epochs, current_alpha, current_beta, current_gamma, current_lambda_t, current_uncertainty_loss_weight, loss_con.avg, loss_bce.avg, loss_rec.avg, losses.avg,))
             if self.trustworthy_module is not None:
                 inform += ", loss_trust:{:.2f}, loss_unc:{:.2f}".format(
@@ -317,7 +317,7 @@ class TVINet(nn.Module):
 
         final_test_res, final_test_inform = self.test(test_dataset, best_epoch, mode="test")
 
-        final_test_inform = "TVI-Net FINAL TEST RESULTS: " + final_test_inform
+        final_test_inform = "TVRL FINAL TEST RESULTS: " + final_test_inform
         self.logger.info(final_test_inform)
 
         return final_test_res
@@ -343,7 +343,7 @@ class TVINet(nn.Module):
 
             evaluation_results = do_metric(label_pred_fusion.cpu().numpy(), test_true_labels.cpu().numpy())
             inform = (
-                '[TVI-Net/{}] ==> epoch[{}/{}]  AP:{:.4f}  1-HL:{:.4f}  1-RL:{:.4f}  AUC:{:.4f}  1-OE:{:.4f}  1-Cov:{:.4f}'.format(
+                '[TVRL/{}] ==> epoch[{}/{}]  AP:{:.4f}  1-HL:{:.4f}  1-RL:{:.4f}  AUC:{:.4f}  1-OE:{:.4f}  1-Cov:{:.4f}'.format(
                     mode, epoch + 1, self.args.epochs, evaluation_results[0], evaluation_results[1], evaluation_results[2],
                     evaluation_results[3], evaluation_results[4], evaluation_results[5]
                 ))

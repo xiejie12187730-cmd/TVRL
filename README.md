@@ -1,8 +1,8 @@
-# TVI-Net
+# TVRL
 
-Trustworthy Variational Imputation Network for Incomplete Multi-view Multi-label Classification.
+TVRL for Incomplete Multi-view Multi-label Classification.
 
-本工程的模型、模块及损失名称与论文及框架图统一。Python 类名使用 `TVINet`，论文和运行日志中的模型名称使用 `TVI-Net`。
+TVRL 用于不完整多视图多标签分类。[模型实现](models/TVRL.py) 包含视图补全、表示学习和多标签分类模块。[训练入口](train.py) 提供 Corel5k 实验的训练与评估流程。
 
 ## 运行
 
@@ -12,15 +12,15 @@ Trustworthy Variational Imputation Network for Incomplete Multi-view Multi-label
 python train.py
 ```
 
-训练入口使用 `from models.TVINet import TVINet`。依赖包括 Python、PyTorch、NumPy、SciPy 和 scikit-learn。当前附带 Corel5k 数据和对应的数据划分、缺失掩码。
+训练入口使用 `from models.TVRL import TVRL`。依赖包括 Python、PyTorch、NumPy、SciPy 和 scikit-learn。当前附带 Corel5k 数据和对应的数据划分、缺失掩码。
 
 ## 框架图与代码名称
 
 | 框架部分 | 论文名称 | 代码位置与类名 |
 | --- | --- | --- |
-| 整体模型 | TVI-Net | `models/TVINet.py`：`TVINet` |
+| 整体模型 | TVRL | `models/TVRL.py`：`TVRL` |
 | (a) | VAE-based View Imputation | `models/vae_imputation.py`：`VAEViewImputation` |
-| (b) | Dual-weighted Multi-view Representation Learning | `TVINet` 中的各视图编码器、解码器、`CrossViewProjectionHead`，以及 `models/trustworthy.py` 中的 `DualWeightedReliabilityEstimator` |
+| (b) | Dual-weighted Multi-view Representation Learning | `TVRL` 中的各视图编码器、解码器、`CrossViewProjectionHead`，以及 `models/trustworthy.py` 中的 `DualWeightedReliabilityEstimator` |
 | (c) | Trustworthy Multi-view Multi-label Classification with Uncertainty Quantification | `models/trustworthy.py`：`TrustworthyMultiLabelClassification`、`LabelWiseUncertaintyQuantifier`；共享分类器为 `MultiLabelClassifier` |
 | 损失调度 | Dynamic Weight Scheduling | `models/dynamic_weight_scheduler.py`：`DynamicLossWeightScheduler` |
 
@@ -55,3 +55,20 @@ python parameter_sensitivity_alpha_beta/run_alpha_beta_sensitivity.py
 
 具体参数和输出格式见 `parameter_sensitivity_alpha_beta/README.md`。
 
+## 名称迁移
+
+- `models/DSCN.py` / `DSCN` → `models/TVRL.py` / `TVRL`
+- `AdaptiveVAEImputation` → `VAEViewImputation`
+- `ViewTrustworthinessEvaluator` → `DualWeightedReliabilityEstimator`
+- `TrustworthyMultiViewModule` → `TrustworthyMultiLabelClassification`
+- `UncertaintyQuantifier` → `LabelWiseUncertaintyQuantifier`
+- `InstanceProject` → `CrossViewProjectionHead`
+- `ClassificationLayer` → `MultiLabelClassifier`
+- `InstanceLoss` → `MaskedCrossViewContrastiveLoss`
+- `WeightBCELoss` → `MaskedBCELoss`
+- `ReconstructionLoss` → `ViewReconstructionLoss`
+- `DynamicWeightScheduler` → `DynamicLossWeightScheduler`
+- `loss_MSIC` → `loss_con`；`loss_HMBC` → `loss_bce`
+- `loss_recon` → `loss_rec`；`loss_vae_imputation` → `loss_vae`；`loss_uncertainty` → `loss_unc`
+
+现有命令行参数名称保持兼容。数据、历史实验日志、统计结果和外层项目文件夹名称没有改写；旧日志中的旧损失名称属于历史记录。外部脚本若仍导入旧模型类或旧辅助类，需要按上表更新。带参数的子模块属性名称保持不变。
